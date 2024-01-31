@@ -1,0 +1,116 @@
+:root {
+  --primary-light: #fce7f2;
+  --primary-dark: #5e6073;
+  --secondry-light: #fff7d4;
+  --secondry-dark: #000000;
+  --blu: #d2e0fb;
+  --dark-blu: #8eaccd;
+  --yelo: #f2f4d1;
+  --gren: #bcd1a9;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  display: flex;
+}
+
+.left {
+  margin: 5rem;
+}
+
+.replyBtn {
+  margin-top: 2rem;
+  left: 1rem;
+}
+
+table,
+th,
+td {
+  font-size: 50px;
+  font-family: "Comic Sans MS", Courier, monospace;
+  color: var(--dark-blu);
+}
+
+table {
+  position: absolute;
+  border-collapse: collapse;
+  left: 50%;
+  margin: 5rem;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+td {
+  border: 1px solid var(--primary-dark);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table tr td:first-child {
+  border-left: 0;
+}
+
+table tr td:last-child {
+  border-right: 0;
+}
+
+.endGame {
+  display: none;
+  width: 250px;
+  top: 120px;
+  background-color: var(--gren);
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: var(--primary-dark);
+  font-size: 2em;
+}
+
+.btn {
+  width: 15rem;
+  height: 7rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  color: var(--primary-dark);
+  background-color: var(--blu);
+  margin: 5rem;
+  border: 1px solid var(--primary-dark);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  color: var(--primary-dark);
+  background-color: darken(var(--blu));
+  border: 1px solid var(--primary-dark);
+  scale: 1.1;
+}
