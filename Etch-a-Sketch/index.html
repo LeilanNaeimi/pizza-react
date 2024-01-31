@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="detail">
+      <label for="colorPicker" class="lable">Choose a color:</label>
+      <input
+        type="color"
+        id="colorPicker"
+        value="#686868"
+        onchange="updateColor()"
+      />
+      <button class="btn clear" onclick="clearPage()">Clear</button>
+      <button class="btn eraser" onclick="eraser()">Eraser</button>
+      <button class="btn" onclick="changeGridSize()">Change Grid Size</button>
+    </div>
+
+    <div id="container"></div>
+
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        LeilanNa
+      </p>
+      <a href="https://github.com/leilannaeimi" target="_blank">
+        <img src="img/github.svg" alt="github" width="35" class="github" />
+      </a>
+    </footer>
+  </body>
+</html>

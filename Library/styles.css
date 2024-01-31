@@ -1,0 +1,270 @@
+:root {
+  --primary-light: #fce7f2;
+  --primary-dark: #5e6073;
+  --secondry-light: #fff7d4;
+  --secondry-dark: #000000;
+  --blu: #d2e0fb;
+  --dark-blu: #8eaccd;
+  --yelo: #f2f4d1;
+  --gren: #d7e5ca;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  display: block;
+  border-radius: 5px;
+  height: 5rem;
+}
+
+label {
+  display: block;
+  margin-top: 2rem;
+}
+
+.text {
+  text-align: center;
+  justify-content: center;
+  margin-top: 1rem;
+  background-color: var(--blu);
+  color: var(--primary-dark);
+  width: 70vw;
+  height: 5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 7px var(--primary-dark);
+  line-height: 5rem;
+}
+
+.bookList {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--blu);
+  color: var(--primary-dark);
+  width: 70vw;
+  height: 90vh;
+  margin: 2rem;
+  padding: 2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 7px var(--primary-dark);
+  line-height: 3rem;
+}
+
+.items {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: var(--yelo);
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+}
+
+#bookTitle,
+#author,
+#pages {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.newBook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li :last-child {
+  margin-left: 5rem;
+}
+
+.btnAdd {
+  font-size: 5rem;
+  color: var(--primary-dark);
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  transition: all 0.3s;
+}
+
+.btnAdd:hover {
+  color: darken(var(--primary-dark));
+  scale: 1.6;
+}
+
+.deleteBtn {
+  display: inline;
+  font-size: 2rem;
+  color: var(--primary-dark);
+  border: 1px solid var(--primary-dark);
+  background-color: transparent;
+  margin: 0;
+  width: 7rem;
+  transition: all 0.3s;
+  padding: 5px 10px;
+}
+
+.deleteBtn:hover {
+  color: darken(var(--primary-dark));
+  scale: 1.1;
+}
+
+.btn {
+  width: 20rem;
+  height: 7rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  color: var(--primary-dark);
+  background-color: var(--yelo);
+  margin: 5rem;
+  border: 1px solid var(--primary-light);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  color: var(--primary-dark);
+  background-color: darken(var(--yelo));
+  border: 1px solid var(--primary-dark);
+  scale: 1.1;
+}
+
+/* Dialog Box */
+dialog {
+  animation: fade-out 0.7s ease-out;
+  width: 30rem;
+  height: 45rem;
+  margin: 3rem;
+  padding: 1rem;
+  border: 1px solid var(--primary-light);
+  border-radius: 10px;
+}
+
+dialog[open] {
+  animation: fade-in 0.7s ease-out;
+}
+
+dialog[open]::backdrop {
+  animation: backdrop-fade-in 0.7s ease-out forwards;
+}
+
+p,
+select,
+output {
+  font-size: 2rem;
+  color: var(--primary-dark);
+}
+
+.btnDialog {
+  width: 10rem;
+  height: 5rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  color: var(--yelo);
+  background-color: var(--primary-dark);
+  margin: 3rem 1rem 0 0;
+  border: 1px solid var(--primary-light);
+  transition: all 0.3s;
+}
+
+.btnDialog:hover {
+  color: var(--primary-dark);
+  background-color: var(--yelo);
+  border: 1px solid var(--primary-dark);
+  scale: 1.1;
+}
+
+/* Animation keyframes */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+  }
+}
+
+@keyframes backdrop-fade-in {
+  0% {
+    background-color: rgb(0 0 0 / 0);
+  }
+
+  100% {
+    background-color: rgb(0 0 0 / 0.25);
+  }
+}
+
+body,
+button {
+  font-family: system-ui;
+}
+
+::backdrop {
+  background-image: linear-gradient(transparent, var(--secondry-dark));
+  opacity: 2;
+}
+
+/* FOOTER */
+.footer {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.github {
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.hidden {
+  opacity: 0;
+}

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font-size: 5rem;
+  background-color: #fbf6ee;
+  color: #352f44;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  margin: auto;
+  background-color: #9690a5;
+  border: 3px solid #5c5963;
+  border-radius: 10px;
+  width: 34rem;
+  height: 45rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.display {
+  /* margin: 0; */
+  background-color: #faf0e6;
+  border: none;
+  border-radius: 10px;
+  padding: 2.5rem;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.btn {
+  background-color: #b9b4c7;
+  width: 5rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+}
+
+.btnblu {
+  background-color: #b3e4eb;
+  width: 5rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+}
+
+.btnOrange {
+  background-color: #ffb534;
+}
+
+.btn0 {
+  width: 13rem;
+}
+
+.btnAc {
+  width: 21rem;
+}
