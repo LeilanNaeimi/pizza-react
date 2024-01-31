@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>
+          <h1 class="headline">Youtube resource Gallery</h1>
+          <p>
+            This app to keep track of valuable resources while learning to code.
+            As you come across a helpful video, add the id here.
+          </p>
+        </div>
+
+        <form>
+          <label for="videoId">VideoId</label>
+          <input
+            type="text"
+            name="videoId"
+            id="videoId"
+            placeholder="_ZvnD73m40o"
+          />
+          <button onclick="saveVideo(event)">Save Video</button>
+          <ul class="videosContainer">
+            <!-- <li onclick="clickVideo(event, '_ZvnD73m40o')">
+              <img
+                class="thumbnail"
+                src="https://i3.ytimg.com/vi/_ZvnD73m40o/sddefault.jpg"
+                alt="Cover image for YouTube video with id _ZvnD73m40o"
+              />
+              <button class="delete-btn">&times;</button>
+            </li> -->
+          </ul>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

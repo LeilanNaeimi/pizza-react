@@ -1,0 +1,17 @@
+{
+  "name": "challengingcodes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-serve": "^0.0.0",
+    "live-server": "^1.2.2",
+    "lodash-es": "^4.17.21",
+    "parcel": "^2.9.3"
+  }
+}

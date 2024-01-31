@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clac</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script type="module" src="src/js/main.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <button class="btn btn-calcAge">Calc Age</button>
+      <button class="btn btn-calculator">Calculator</button>
+    </div>
+
+    <div class="age hidden">
+      <h4 id="text"></h4>
+      <div>
+        <label for="dob">Enter your Date of Birth:</label>
+        <input type="text" id="dob" class="input" placeholder="mm/dd/yyyy" />
+      </div>
+      <button class="btn btn-calc">calc</button>
+      <button class="btn btn-back">back</button>
+      <p id="result"></p>
+    </div>
+
+    <div class="calc hidden">
+      <p class="screen"></p>
+      <div class="rows">
+        <div class="row1">
+          <div class="calculater-btn">AC</div>
+          <div class="calculater-btn">+/-</div>
+          <div class="calculater-btn">%</div>
+          <div class="calculater-btn">/</div>
+        </div>
+        <div class="row2">
+          <div class="calculater-btn">7</div>
+          <div class="calculater-btn">8</div>
+          <div class="calculater-btn">9</div>
+          <div class="calculater-btn">*</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
