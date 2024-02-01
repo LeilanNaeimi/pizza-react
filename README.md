@@ -15,4 +15,5 @@ to store lists of books.
 ### Tic-Tac-Toe
 This game made with HTML, css and javaScript for portfolio.
 
-[### nested comments](https://nstd-comments.netlify.app/)
+### nested comments
+[nested comments](https://nstd-comments.netlify.app/)
