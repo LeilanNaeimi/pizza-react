@@ -17,3 +17,6 @@ This game made with HTML, css and javaScript for portfolio.
 
 ### nested comments
 [nested comments](https://nstd-comments.netlify.app/)
+
+### Todo List 2
+[Todo List 2](https://listofday.netlify.app/)
