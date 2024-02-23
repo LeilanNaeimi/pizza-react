@@ -1,5 +1,6 @@
 # Profile Card
-![1](https://github.com/LeilanNaeimi/ProfileCard/assets/7776224/7b520315-64e0-4845-b622-fc77f6144c2a)
+ 
+![profilecard](https://github.com/naleilan/javascriptAssignments/assets/7776224/6a879bf4-115f-4cc2-8018-8ad8c50b98d0)
 
 This Profile made by HTML, CSS and Reactjs.
 
